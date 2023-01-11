@@ -1,0 +1,15 @@
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\bin\Debug\net5.0\OnionArcExample.Domain.deps.json
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\bin\Debug\net5.0\OnionArcExample.Domain.runtimeconfig.json
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\bin\Debug\net5.0\OnionArcExample.Domain.runtimeconfig.dev.json
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\bin\Debug\net5.0\OnionArcExample.Domain.dll
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\bin\Debug\net5.0\OnionArcExample.Domain.pdb
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.csproj.AssemblyReference.cache
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.AssemblyInfoInputs.cache
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.AssemblyInfo.cs
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.csproj.CoreCompileInputs.cache
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.dll
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\refint\OnionArcExample.Domain.dll
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.pdb
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\OnionArcExample.Domain.genruntimeconfig.cache
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Domain\obj\Debug\net5.0\ref\OnionArcExample.Domain.dll

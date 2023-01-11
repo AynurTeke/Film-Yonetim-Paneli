@@ -1,0 +1,58 @@
+﻿@model IEnumerable<filmUygulamasi.Models.film>
+
+@{
+    ViewData["Title"] = "Anasayfa";
+    ViewBag.Title = "Filmler";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="mt-4">@ViewBag.Title</h1>
+<br/>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        @ViewBag.Title
+    </div>
+    <div class="col-12 col-lg-12 p-3">
+        <a href="@Url.Action("Create","Home")" class="btn btn-primary">Ekle</a>
+        <a href="@Url.Action("SearchYear","Home")" class="btn btn-primary">Yapım Yıllarına Göre Arama</a>
+        <a href="@Url.Action("Saloons","Home")" class="btn btn-primary">Salonlar</a>
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>Film ID</th>
+                    <th>Film Adı</th>
+                    <th>Film Yapım Yılı</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+
+                            @Html.DisplayFor(modelItem => item.filmID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.filmAd)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.filmYapimYil)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Home", new { id = item.filmID})">Güncelle</a> |
+                            <a href="@Url.Action("Delete", "Home", new { id = item.filmID})">Sil</a> |
+                            <a href="@Url.Action("Search", "Home", new { id = item.filmID})">Hangi Salonlarda Var?</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

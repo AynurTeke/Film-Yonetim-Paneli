@@ -1,0 +1,40 @@
+﻿@model IEnumerable<filmUygulamasi.Models.filmSalon>
+@{
+    ViewData["Title"] = "Salon Filtre Sayfası";
+    ViewBag.Title = "Salon Filtre Sayfası";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 class="mt-4">@ViewBag.Title</h1>
+<br/>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        @ViewBag.Title
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple">
+            <thead>
+                <tr>
+                    <th>Film Adı</th>
+                    <th>Salon Adı</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+
+                            @Html.DisplayFor(modelItem => item.film.filmAd)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.salon.salonAd)
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

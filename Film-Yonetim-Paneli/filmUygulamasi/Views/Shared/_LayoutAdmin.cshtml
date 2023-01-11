@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Paneli</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/admin/css/styles.css" />
+    <script type="text/javascript" src="../../assets/admin/js/datatables-simple-demo.js"></script>
+    <script type="text/javascript" src="../../assets/admin/js/scripts.js"></script>
+    <script>
+        window.onload = function() {
+           if ($('form').length) {
+			$('form').validate({
+				errorPlacement: function () {
+					return true;
+				},
+				rules: {
+					filmAd: {
+						required: true,
+					},
+					filmYapimYil: {
+						required: true
+					},
+                    filmYapimYil1: {
+						required: true
+					},
+                    filmYapimYil2: {
+						required: true
+					},
+                    salonAdi: {
+						required: true
+					},
+				},
+				highlight: function (element, errorClass, validClass) {
+					$(element).parents('.form-group').addClass(errorClass).removeClass(validClass);
+					//   $(element).parent().addClass(errorClass);
+				},
+				unhighlight: function (element, errorClass, validClass) {
+					$(element).parents('.form-group').removeClass(errorClass).addClass(validClass);
+					//   $(element).parent().removeClass(errorClass);
+				},
+				submitHandler: function (form) {
+					// var mailBody = 'Ad Soyad: ' + form.find('input[name=name]') + '<br> Telefon: ' + form.find('input[name=phone]') + '<br> E-posta: ' + form.find('input[name=email]') + '<br> Firma Adı: ' + form.find('input[name=companyName]');
+					var alertMsg = 'Gönderim esnasında hata oluştu. Lütfen daha sonra tekrar deneyiniz.';
+					var successMsg = 'İletiniz başarılı bir şekilde gönderilmiştir.';
+					
+					
+                    $('form').trigger('submit');
+				}
+			});
+		
+        }
+        }
+    </script>
+</head>
+<body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="@Url.Action("Index","Home")">Film Yönetim Paneli</a>
+            <!-- Sidebar Toggle-->
+        </nav>
+    
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Filmler</div>
+                            <a class="nav-link" href="@Url.Action("Index","Home")">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Film Listesi
+                            </a>
+                            
+                            <a class="nav-link" href="@Url.Action("Saloons","Home")">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Salon Listesi
+                            </a>
+                            
+                            <a class="nav-link" href="@Url.Action("SearchYear","Home")">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Yapım Yılına Göre Arama
+                            </a>
+                            
+                            <a class="nav-link" href="@Url.Action("Create","Home")">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Film Ekle
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        @RenderBody();
+                    </div>
+                </main>
+                
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+       
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

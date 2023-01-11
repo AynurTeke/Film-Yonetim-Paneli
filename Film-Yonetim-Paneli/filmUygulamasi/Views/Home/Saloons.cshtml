@@ -1,0 +1,36 @@
+﻿@model IEnumerable<filmUygulamasi.Models.salon>
+
+@{
+    ViewData["Title"] = "Salonlar";
+    ViewBag.Title = "Salonlar";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h1 class="mt-4">@ViewBag.Title</h1>
+<br/>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        @ViewBag.Title
+    </div>
+    <div class="card-body">
+        @if (Model != null)
+        {
+            <form action="@Url.Action("SaloonsFilter","Home")" method="post">
+                <div class="form-group">
+                    <label for="salonAdi" class="control-label"></label>
+                    <select name="salonAdi" id="salonAdi" for="salonAdi" class="form-control" data-required="true">
+                        <option value="" selected>Salon seçiniz</option>
+                        @foreach (var item in Model)
+                        {
+                            <option value="@item.salonAd.Trim()">@item.salonAd</option>
+                        }
+                    </select>
+                    <span for="salonAdi" class="text-danger error"></span>
+                </div>
+                <br/>
+                    <input type="submit" value="Salondaki Filmler" class="btn btn-primary" />
+            </form>
+        }
+    </div>
+</div>
+

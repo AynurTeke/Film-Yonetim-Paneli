@@ -1,0 +1,12 @@
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\bin\Debug\net5.0\OnionArcExample.Persistence.deps.json
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\bin\Debug\net5.0\OnionArcExample.Persistence.dll
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\bin\Debug\net5.0\OnionArcExample.Persistence.pdb
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\OnionArcExample.Persistence.csproj.AssemblyReference.cache
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\OnionArcExample.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\OnionArcExample.Persistence.AssemblyInfoInputs.cache
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\OnionArcExample.Persistence.AssemblyInfo.cs
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\OnionArcExample.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\OnionArcExample.Persistence.dll
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\refint\OnionArcExample.Persistence.dll
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\OnionArcExample.Persistence.pdb
+C:\Users\cimbo\OneDrive\Masaüstü\filmUygulamasi\OnionArcExample.Persistence\obj\Debug\net5.0\ref\OnionArcExample.Persistence.dll

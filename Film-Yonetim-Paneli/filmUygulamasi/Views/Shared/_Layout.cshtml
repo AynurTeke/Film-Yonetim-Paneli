@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Paneli</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/admin/css/styles.css" />
+    <script type="text/javascript" src="../../assets/admin/js/datatables-simple-demo.js"></script>
+    <script type="text/javascript" src="../../assets/admin/js/scripts.js"></script>
+    <script>
+        window.onload = function() {
+           if ($('form').length) {
+			$('form').validate({
+				errorPlacement: function () {
+					return true;
+				},
+				rules: {
+					kullaniciAdi: {
+						required: true,
+					},
+					Parola: {
+						required: true
+					},
+				},
+				highlight: function (element, errorClass, validClass) {
+					$(element).parents('.form-group').addClass(errorClass).removeClass(validClass);
+					//   $(element).parent().addClass(errorClass);
+				},
+				unhighlight: function (element, errorClass, validClass) {
+					$(element).parents('.form-group').removeClass(errorClass).addClass(validClass);
+					//   $(element).parent().removeClass(errorClass);
+				},
+				submitHandler: function (form) {
+					// var mailBody = 'Ad Soyad: ' + form.find('input[name=name]') + '<br> Telefon: ' + form.find('input[name=phone]') + '<br> E-posta: ' + form.find('input[name=email]') + '<br> Firma Adı: ' + form.find('input[name=companyName]');
+					var alertMsg = 'Gönderim esnasında hata oluştu. Lütfen daha sonra tekrar deneyiniz.';
+					var successMsg = 'İletiniz başarılı bir şekilde gönderilmiştir.';
+					
+					
+                    $('form').trigger('submit');
+				}
+			});
+		
+        }
+        }
+    </script>
+</head>
+<body class="sb-nav-fixed">
+
+    
+        <div id="layoutSidenav">
+            
+            <div id="layoutSidenav_content" class="px-5">
+                <main>
+                    <div class="container-fluid px-4">
+                        @RenderBody();
+                    </div>
+                </main>
+                
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+       
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
